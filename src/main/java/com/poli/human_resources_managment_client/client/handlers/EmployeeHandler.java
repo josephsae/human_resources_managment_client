@@ -34,18 +34,18 @@ public class EmployeeHandler {
 		String operation = scanner.nextLine().toUpperCase();
 
 		switch (operation) {
-		case "GET":
-			return handleGet();
-		case "INSERT":
-			return handleInsert();
-		case "UPDATE":
-			return handleUpdate();
-		case "REMOVE":
-			return handleRemove();
-		case "RELOCATE":
-			return handleRelocate();
-		default:
-			return "Invalid operation for Employee";
+			case "GET":
+				return handleGet();
+			case "INSERT":
+				return handleInsert();
+			case "UPDATE":
+				return handleUpdate();
+			case "REMOVE":
+				return handleRemove();
+			case "RELOCATE":
+				return handleRelocate();
+			default:
+				return "Invalid operation for Employee";
 		}
 	}
 
@@ -111,7 +111,7 @@ public class EmployeeHandler {
 		System.out.print("Enter Department Name: ");
 		String departmentName = scanner.nextLine();
 
-		return "EMPLOYEE_RELOCATE " + employeeId + " " + cityName + " " + locationAddress + " " + departmentName;
+		return "EMPLOYEE_RELOCATE " + employeeId + " " + cityName + " " + locationAddress + departmentName;
 	}
 
 	/**
